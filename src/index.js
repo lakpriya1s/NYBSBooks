@@ -3,12 +3,11 @@ import ReactDOM from 'react-dom';
 import './index.css';
 //import Books from './components/books';
 import reportWebVitals from './reportWebVitals';
-import "bootstrap/dist/css/bootstrap.css"
-import BookList from './components/bookList';
-//import Counter from './components/counter'
+import "bootstrap/dist/css/bootstrap.css";//import Counter from './components/counter'
+import App from './App';
 
 ReactDOM.render(
-  <BookList/>,
+  <App/>,
   document.getElementById('root')
 );
 

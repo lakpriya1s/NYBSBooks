@@ -12,7 +12,7 @@ class Books extends Component {
 
     componentDidMount(){
 
-        axios.get('https://api.nytimes.com/svc/books/v3/lists/current/hardcover-fiction.json?api-key=OPZ9CT7rKrV6lGmEJxs9bAymoBiyAIsI')
+        axios.get('https://api.nytimes.com/svc/books/v3/lists/current/'+this.props.name+'.json?api-key=OPZ9CT7rKrV6lGmEJxs9bAymoBiyAIsI')
         .then(response => {
             this.setState({ 
             isLoaded: true,
@@ -20,7 +20,9 @@ class Books extends Component {
           });
           console.log(this.state.data);
         })
-        .catch((err)=> {})  
+        .catch((err)=> {
+            console.log(err);
+        })  
     }
 
     render() { 
