@@ -33,14 +33,32 @@ class Books extends Component {
             return <div>Loading..</div>
         }else{
             const child = data.map((book) => {
-                return <div>
-                  <p>Title - { book.author }</p>
+                return <div className='col-sm-4'>
+                   <div className='card card-product'>
+                        <div className='img-wrap'>
+                            <img src={book.book_image} className="card-img-top" alt="Image"/>
+
+                        </div>
+                        <figcaption className="info-wrap">
+                            <h6 className='title'>
+                                {book.author}
+                            </h6>
+                            <div className="action-wrap">
+                                <a href={book.amazon_product_url} className="btn btn-primary btn-sm float-right"> Order </a>
+                                <div className="h5">
+                                    <span>Rank: {book.rank}</span>
+                                </div>
+			                </div>
+                        </figcaption>
+                    </div>
                 </div>
             });
           
-              return <div>
-                <div>{ child }</div>
-              </div>;
+            return (<div className="row">
+                { child }
+            </div>
+            );
+            
         }
     }
 }

@@ -1,9 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-//import Books from './components/books';
 import reportWebVitals from './reportWebVitals';
-import "bootstrap/dist/css/bootstrap.css";//import Counter from './components/counter'
+import "bootstrap/dist/css/bootstrap.css";
 import App from './App';
 
 ReactDOM.render(
