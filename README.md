@@ -2,6 +2,8 @@
 
 This is a react based-web application to show the New York Times best-selling books list.
 
+<img src="https://github.com/lakpriya1s/NYBSBooks/blob/master/src/logo.svg" width="500">
+
 ## Books API
 
 Used the web api of New York Times Books API [https://developer.nytimes.com/](https://developer.nytimes.com/)
@@ -22,7 +24,7 @@ Go to [NYBS Books web app](https://nybsbooks.netlify.app)
 
 ## Mobile
 
-<img src="https://github.com/lakpriya1s/NYBSBooks/blob/master/screenshots/mobile1.jpg" width="300"><img src="https://github.com/lakpriya1s/NYBSBooks/blob/master/screenshots/mobile2.jpg" width="300">
+<img src="https://github.com/lakpriya1s/NYBSBooks/blob/master/screenshots/mobile1.jpg" width="200"><img src="https://github.com/lakpriya1s/NYBSBooks/blob/master/screenshots/mobile2.jpg" width="200">
 
 ## Credits
 
