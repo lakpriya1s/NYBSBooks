@@ -37,8 +37,12 @@ class TopBooks extends Component {
             return(<div className="TopBooks">
                 {data.map((list) =>(
                      <div>
-                        <div className="card-body mt-4">
-                            <h3>{list.display_name}</h3>
+                        <div className="list_name mt-2 mr-2 ml-2 mb-2">
+                            <div className="card">
+                                <div className="card-body">
+                                    <h3>{list.display_name}</h3>
+                                </div>
+                            </div>
                         </div>
                         <div className="row">
                         {list.books.map((book) =>(
@@ -49,6 +53,7 @@ class TopBooks extends Component {
                                     <div className="info-wrap d-flex justify-content-center">
                                         <div className="mr-3 ml-3">
                                             <h6 className='title'>
+                                                <strong>Title:</strong> {book.title} <br/><br/>
                                                 <strong>Author:</strong> {book.author} <br/>
                                                 <strong>Publisher:</strong> {book.publisher}
                                             </h6>

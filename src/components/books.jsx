@@ -64,8 +64,8 @@ class Books extends Component {
           
             return (<div>
                 <div className="list_name">
-                    <div class="card">
-                    <div class="card-body">
+                    <div className="card">
+                    <div className="card-body">
                         <h3>{ list_name }</h3>
                     </div>
                 </div>
