@@ -40,7 +40,7 @@ class Books extends Component {
                 return <div className='col-sm-4'>
                    <div className='card card-product'>
                         <div className='img-wrap'>
-                            <img src={book.book_image} className="card-img-top" alt="Image"/>
+                            <img src={book.book_image} className="card-img-top" alt={book.title}/>
                             <div className="info-wrap d-flex justify-content-center">
                                 <div className="mr-3 ml-3">
                                     <h6 className='title'>
@@ -49,7 +49,8 @@ class Books extends Component {
                                         <strong>Publisher:</strong> {book.publisher} <br/>
                                     </h6>
                                     <p>{book.description}</p>
-                                    <a href={book.amazon_product_url} className="btn btn-primary btn-xl"> Buy on Amazon.com </a>
+                                    <a href={book.amazon_product_url} className="btn btn-primary btn-xl"> Buy on Amazon.com </a> <br/>
+                                    <a href={'/reviews/' + book.primary_isbn10} className="btn btn-warning btn-xl mt-2"> Reviews </a>
                                 </div>
                         </div>
                         <div className="action-wrap">
