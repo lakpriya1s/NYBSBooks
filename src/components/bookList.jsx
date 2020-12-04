@@ -29,20 +29,22 @@ class BookList extends Component {
         var {isLoaded, data } = this.state;
 
         if(!isLoaded){
-            return <div>Loading..</div>
+            return <div className="progress" style={{height: 20}}>
+            <div className="progress-bar" role="progressbar" style={{width: 25}} aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
         }else{
             const child = data.map((booklist) => {
                 return <div key={ booklist.list_name_encoded }>
                     <a href={'/lists/' + booklist.list_name_encoded} className="card text-center">
                         <div className="card-body">
-                            <p>{ booklist.display_name }</p>
+                            <h3>{ booklist.display_name }</h3>
                         </div>
                     </a>
                 </div>
             });
           
               return (<div>
-                    <div className="col-12 col-sm-8 offset-sm-2 offset-0 mt-3" >{ child }</div>
+                    <div className="col-12 col-sm-10 offset-sm-1 offset-0 mt-3" >{ child }</div>
               </div>);
         }
     }

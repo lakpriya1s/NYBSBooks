@@ -19,3 +19,69 @@ code {
 .card-img-top {
   width: 100%;
 }
+
+.card-product:after {
+  content: "";
+  display: table;
+  clear: both;
+  visibility: hidden;
+}
+
+.card-product .price-new,
+.card-product .price {
+  margin-right: 5px;
+}
+
+.card-product .price-old {
+  color: #999;
+}
+
+.card-product .img-wrap {
+  border-radius: 3px 3px 0 0;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+}
+
+.card-product .action-wrap {
+  padding-top: 4px;
+  margin-top: 4px;
+}
+
+.card-product .bottom-wrap {
+  padding: 15px;
+  border-top: 1px solid #eee;
+}
+
+.card-product .title {
+  margin-top: 0;
+}
+
+.card-product {
+  margin: 6px;
+}
+
+.info-wrap {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.2s, visibility 0.2s;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+.img-wrap:hover .info-wrap {
+  visibility: visible;
+  opacity: 1;
+}
+
+.list_name {
+  padding-top: 20px;
+}

@@ -1,13 +1,15 @@
-import React, { Component } from 'react';
+import React from 'react';
 import NavBar from './components/navbar'
 import BookList from './components/bookList';
 import Books from './components/books';
 import './App.css';
 import {useRoutes} from 'hookrouter';
+import TopBooks from './components/top';
 
 const routes = {
     '/': () => <BookList/>,
-    '/lists/:name': ({name}) => <Books name={name}/>
+    '/lists/:name': ({name}) => <Books name={name}/>,
+    '/topbooks': () => <TopBooks/>
 }
 
 function App() {
