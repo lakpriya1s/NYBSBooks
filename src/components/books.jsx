@@ -32,7 +32,7 @@ class Books extends Component {
         var {isLoaded, data, list_name} = this.state;
 
         if(!isLoaded){
-            return <div className="text-center mt-100">
+            return <div className="text-center">
             <div className="spinner-grow" style={{width:100,height: 100}} role="status">
               <span className="sr-only">Loading...</span>
             </div>
