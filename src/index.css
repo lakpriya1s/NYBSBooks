@@ -85,3 +85,9 @@ code {
 .list_name {
   padding-top: 20px;
 }
+
+.spinner-grow {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+}

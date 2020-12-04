@@ -30,8 +30,10 @@ class TopBooks extends Component {
         var {isLoaded, data} = this.state;
 
         if(!isLoaded){
-            return <div className="progress" style={{height: 20}}>
-            <div className="progress-bar" role="progressbar" style={{width: 25}} aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+            return <div className="text-center mt-100">
+            <div className="spinner-grow" style={{width:100,height: 100}} role="status">
+              <span className="sr-only">Loading...</span>
+            </div>
           </div>
         }else{
             return(<div className="TopBooks">
