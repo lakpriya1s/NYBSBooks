@@ -14,17 +14,17 @@ Go to [NYBS Books web app](https://nybsbooks.netlify.app)
 
 ## Desktop
 
-<img src="https://github.com/lakpriya1s/NYBSBooks/blob/master/screenshots/image-d-books.png" width="200">
+<img src="https://github.com/lakpriya1s/NYBSBooks/blob/master/screenshots/image-d-books.png" width="500">
 
-![Desktop view](https://github.com/lakpriya1s/NYBSBooks/blob/master/screenshots/image-d.png)
+<img src="https://github.com/lakpriya1s/NYBSBooks/blob/master/screenshots/image-d.png" width="500">
 
-![Desktop view](https://github.com/lakpriya1s/NYBSBooks/blob/master/screenshots/image-d-revs.png)
+<img src="https://github.com/lakpriya1s/NYBSBooks/blob/master/screenshots/image-d-revs.png" width="500">
 
 ## Mobile
 
-![Mobile view](https://github.com/lakpriya1s/NYBSBooks/blob/master/screenshots/mobile1.jpg)
+<img src="https://github.com/lakpriya1s/NYBSBooks/blob/master/screenshots/mobile1.jpg" width="300">
 
-![Mobile view](https://github.com/lakpriya1s/NYBSBooks/blob/master/screenshots/mobile2.jpg)
+<img src="https://github.com/lakpriya1s/NYBSBooks/blob/master/screenshots/mobile2.jpg" width="300">
 
 ## Credits
 
