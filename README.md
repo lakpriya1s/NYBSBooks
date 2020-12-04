@@ -14,11 +14,11 @@ Used the web api of New York Times Books API [https://developer.nytimes.com/](ht
 
 ## How this app works
 
-In the home page, we will see the best sellers list names in New York. Then we can select one of them to see books on that list.
+- In the home page, we will see the best sellers list names in New York. Then we can select one of them to see books on that list.
 
-In the top 5 books section, we can see the top 5 books for all the Best Sellers lists.
+- I n the top 5 books section, we can see the top 5 books for all the Best Sellers lists.
 
-By mouse hovering on a book, We can see more details about the selected book, and clicking on the buy button we can order the book from amazon.com. By clicking on the review button on a book, we can see book reviews that selected book got.
+- By mouse hovering on a book, We can see more details about the selected book, and clicking on the buy button we can order the book from amazon.com. By clicking on the review button on a book, we can see book reviews that selected book got.
 
 # Screenshots
 
