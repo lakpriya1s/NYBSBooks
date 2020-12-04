@@ -38,6 +38,8 @@ code {
 
 .card-product .img-wrap {
   border-radius: 3px 3px 0 0;
+  width: auto;
+  height: auto;
   overflow: hidden;
   position: relative;
   text-align: center;
@@ -63,6 +65,8 @@ code {
 
 .info-wrap {
   position: absolute;
+  border: red;
+  border-style: solid;
   top: 0;
   bottom: 0;
   left: 0;
