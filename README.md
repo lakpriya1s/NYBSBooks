@@ -2,15 +2,23 @@
 
 This is a react based-web application to show the New York Times best-selling books list.
 
-<img src="https://github.com/lakpriya1s/NYBSBooks/blob/master/src/logo.svg" width="500">
+<img src="https://github.com/lakpriya1s/NYBSBooks/blob/master/src/logo.svg" width="150">
+
+## 🚀 Live App
+
+Go to [NYBS Books web app](https://nybsbooks.netlify.app)
 
 ## Books API
 
 Used the web api of New York Times Books API [https://developer.nytimes.com/](https://developer.nytimes.com/)
 
-## Live App
+## How this app works
 
-Go to [NYBS Books web app](https://nybsbooks.netlify.app)
+In the home page, we will see the best sellers list names in New York. Then we can select one of them to see books on that list.
+
+In the top 5 books section, we can see the top 5 books for all the Best Sellers lists.
+
+By mouse hovering on a book, We can see more details about the selected book, and clicking on the buy button we can order the book from amazon.com. By clicking on the review button on a book, we can see book reviews that selected book got.
 
 # Screenshots
 
@@ -24,7 +32,7 @@ Go to [NYBS Books web app](https://nybsbooks.netlify.app)
 
 ## Mobile
 
-<img src="https://github.com/lakpriya1s/NYBSBooks/blob/master/screenshots/mobile1.jpg" width="200"><img src="https://github.com/lakpriya1s/NYBSBooks/blob/master/screenshots/mobile2.jpg" width="200">
+<img src="https://github.com/lakpriya1s/NYBSBooks/blob/master/screenshots/mobile1.jpg" width="200"> <img src="https://github.com/lakpriya1s/NYBSBooks/blob/master/screenshots/mobile2.jpg" width="200">
 
 ## Credits
 
