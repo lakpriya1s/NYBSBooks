@@ -22,9 +22,7 @@ Go to [NYBS Books web app](https://nybsbooks.netlify.app)
 
 ## Mobile
 
-<img src="https://github.com/lakpriya1s/NYBSBooks/blob/master/screenshots/mobile1.jpg" width="300">
-
-<img src="https://github.com/lakpriya1s/NYBSBooks/blob/master/screenshots/mobile2.jpg" width="300">
+<img src="https://github.com/lakpriya1s/NYBSBooks/blob/master/screenshots/mobile1.jpg" width="300"><img src="https://github.com/lakpriya1s/NYBSBooks/blob/master/screenshots/mobile2.jpg" width="300">
 
 ## Credits
 
