@@ -4,6 +4,10 @@ import { useLocation } from "@reach/router"
 const Book = () => {
     const {state} = useLocation();
     console.log(state);
+    window.scrollTo({
+        top:0,
+        behavior: "smooth",
+    });
   
     return ( 
         <div className='row'>
