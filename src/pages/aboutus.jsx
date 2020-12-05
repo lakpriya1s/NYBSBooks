@@ -21,7 +21,8 @@ const AboutUs = () => {
         <ul>
             <li>In the home page, we can see a list of book categories. Among those we can select a category that we want. When entering to a book category we have acess to best selling books under that category in New York.</li>
             <li>In the top 5 books section, we can see the top 5 books for all the Best Sellers lists.</li>
-            <li>By mouse hovering on a book, We can see more details about the selected book, and clicking on the view more button, We can see more information about book and book can be purchased from amazon.com. By clicking on the review button, We can see book reviews for selected book.</li>
+            <li>By mouse hovering on a book, We can see more details about the selected book, and clicking on the view more button, We can see more information about book and book can be purchased from amazon.com.</li>
+            <li>By clicking on the review button, We can see book reviews for selected book.</li>
         </ul>
 
         <h2>Screenshots</h2>

@@ -19,8 +19,9 @@ const Book = () => {
                     <h4>Author: {state.book.author}</h4>
                     <h5>Publisher: {state.book.publisher}</h5>
                     <h5>Contributor: {state.book.contributor}</h5>
-                    <h5>Contributor: {state.book.created_date}</h5>
+                    <h5>Created Date: {state.book.created_date}</h5>
                     <h5>ISBN: {state.book.primary_isbn10}</h5>
+                    <h5>Last Week Rank: {state.book.rank_last_week} </h5>
                     <p>{state.book.description}</p>
                 <a href={state.book.amazon_product_url} className="btn btn-primary btn-xl"> Buy on Amazon.com </a>
                 <a href={'/reviews/' + state.book.primary_isbn10} className="btn btn-warning btn-xl mt-2"> Reviews </a>
