@@ -10,7 +10,7 @@ Go to [NYBS Books web app](https://nybsbooks.netlify.app)
 
 ## Books API
 
-Used the web api of New York Times Books API [https://developer.nytimes.com/](https://developer.nytimes.com/)
+New York Times Books API [https://developer.nytimes.com/](https://developer.nytimes.com/)
 
 ## How this app works
 

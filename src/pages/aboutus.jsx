@@ -14,7 +14,7 @@ const AboutUs = () => {
 
         <h3> Books API </h3>
 
-        <p> Used the web api of New York Times Books API: <a href="https://developer.nytimes.com/">https://developer.nytimes.com/</a> </p>
+        <p> New York Times Books API: <a href="https://developer.nytimes.com/">https://developer.nytimes.com/</a> </p>
 
         <h3> How this app works </h3>
 
