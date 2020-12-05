@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
+import { navigate } from "@reach/router"
 
 class TopBooks extends Component {
     constructor(props){
@@ -61,7 +62,7 @@ class TopBooks extends Component {
                                             </h6>
                                             <p>{book.description}</p>
                                             <a href={book.amazon_product_url} className="btn btn-primary btn-xl"> Buy on Amazon.com </a><br/>
-                                            <a href={'/reviews/' + book.primary_isbn10} className="btn btn-warning btn-xl mt-2"> Reviews </a>
+                                            <button onClick={()=>navigate(`/${list.list_name_encoded}/${book.primary_isbn10}`, { state: { book } })} className="btn btn-warning btn-xl mt-2"> View More </button>
                                         </div>
                                 </div>
                                 <div className="action-wrap">

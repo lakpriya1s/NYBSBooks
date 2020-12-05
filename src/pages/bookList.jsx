@@ -37,7 +37,7 @@ class BookList extends Component {
         }else{
             const child = data.map((booklist) => {
                 return <div key={ booklist.list_name_encoded }>
-                    <a href={'/lists/' + booklist.list_name_encoded} className="card text-center">
+                    <a href={ booklist.list_name_encoded} className="card text-center">
                         <div className="card-body">
                             <h3>{ booklist.display_name }</h3>
                         </div>

@@ -1,13 +1,15 @@
-import React, { Component } from 'react';
+import React from 'react';
 import axios from 'axios';
+import { navigate } from "@reach/router"
 
-class Books extends Component {
+class Books extends React.Component {
     constructor(props){
         super(props);
         this.state = {
             data: [],
             isLoaded: false,
-            list_name: ""
+            list_name: "",
+            list_code:""
         }
     }
 
@@ -18,7 +20,8 @@ class Books extends Component {
             this.setState({ 
             isLoaded: true,
             data: response.data.results.books,
-            list_name: response.data.results.list_name
+            list_name: response.data.results.list_name,
+            list_code: response.data.results.list_name_encoded
           });
           console.log(this.state.data);
         })
@@ -28,8 +31,7 @@ class Books extends Component {
     }
 
     render() { 
-
-        var {isLoaded, data, list_name} = this.state;
+        var {isLoaded, data, list_name, list_code} = this.state;
 
         if(!isLoaded){
             return <div className="text-center">
@@ -52,7 +54,7 @@ class Books extends Component {
                                     </h6>
                                     <p>{book.description}</p>
                                     <a href={book.amazon_product_url} className="btn btn-primary btn-xl"> Buy on Amazon.com </a> <br/>
-                                    <a href={'/reviews/' + book.primary_isbn10} className="btn btn-warning btn-xl mt-2"> Reviews </a>
+                                    <button onClick={()=>navigate(`/${list_code}/${book.primary_isbn10}`, { state: { book } })} className="btn btn-warning btn-xl mt-2"> View More </button>
                             </div>
                         </div>
                         <div className="action-wrap">

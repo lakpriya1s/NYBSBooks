@@ -6,11 +6,11 @@ const AboutUs = () => {
 
         <p>This is a react based-web application to show the New York Times best-selling books list.</p>
 
-        <img src="https://github.com/lakpriya1s/NYBSBooks/blob/master/src/logo.svg?raw=true" alt="logo" width="50"></img> <br/> <br/>
+        <img src="https://github.com/lakpriya1s/NYBSBooks/blob/master/src/logo.svg?raw=true" className='img-fluid' alt="logo" width="50"></img> <br/> <br/>
 
-        <h3>🚀 GitHub repo</h3>
+        <h3>🛠️ GitHub repo</h3>
 
-       <p>Go to <a href="https://github.com/lakpriya1s/NYBSBooks">https://github.com/lakpriya1s/NYBSBooks</a></p>
+        <p>Go to <a href="https://github.com/lakpriya1s/NYBSBooks">https://github.com/lakpriya1s/NYBSBooks</a></p>
 
         <h3> Books API </h3>
 
@@ -28,16 +28,16 @@ const AboutUs = () => {
 
         <h3>Desktop</h3> 
 
-        <img src="https://github.com/lakpriya1s/NYBSBooks/blob/master/screenshots/image-d-books.png?raw=true" alt="desktop" width="500"></img><br/><br/>
+        <img src="https://github.com/lakpriya1s/NYBSBooks/blob/master/screenshots/image-d-books.png?raw=true" className='img-fluid' alt="desktop" width="500"></img><br/><br/>
 
-        <img src="https://github.com/lakpriya1s/NYBSBooks/blob/master/screenshots/image-d.png?raw=true?raw=true" alt="desktop" width="500"></img><br/><br/>
+        <img src="https://github.com/lakpriya1s/NYBSBooks/blob/master/screenshots/image-d.png?raw=true?raw=true" className='img-fluid' alt="desktop" width="500"></img><br/><br/>
 
-        <img src="https://github.com/lakpriya1s/NYBSBooks/blob/master/screenshots/image-d-revs.png?raw=true" alt="desktop" width="500"></img>
+        <img src="https://github.com/lakpriya1s/NYBSBooks/blob/master/screenshots/image-d-revs.png?raw=true" className='img-fluid' alt="desktop" width="500"></img>
         <br/><br/>
         <h3>Mobile</h3>
 
-        <img src="https://github.com/lakpriya1s/NYBSBooks/blob/master/screenshots/mobile1.jpg?raw=true" alt='mobile' width="200"></img>&nbsp;&nbsp;&nbsp;&nbsp;
-        <img src="https://github.com/lakpriya1s/NYBSBooks/blob/master/screenshots/mobile2.jpg?raw=truw" alt='mobile' width="200"></img>
+        <img src="https://github.com/lakpriya1s/NYBSBooks/blob/master/screenshots/mobile1.jpg?raw=true" className='img-fluid' alt='mobile' width="200"></img>&nbsp;&nbsp;&nbsp;&nbsp;
+        <img src="https://github.com/lakpriya1s/NYBSBooks/blob/master/screenshots/mobile2.jpg?raw=truw" className='img-fluid' alt='mobile' width="200"></img>
 
         <h3>Credits</h3> 
 
