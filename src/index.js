@@ -4,9 +4,9 @@ import "./index.css";
 import reportWebVitals from "./reportWebVitals";
 import "bootstrap/dist/css/bootstrap.min.css";
 import App from "./App";
-import "jquery/dist/jquery.slim.min.js";
-import "popper.js/dist/umd/popper.min.js";
-import "bootstrap/dist/js/bootstrap.min.js";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "font-awesome/css/font-awesome.min.css";
+import "bootstrap-social/bootstrap-social.css";
 
 ReactDOM.render(<App />, document.getElementById("root"));
 

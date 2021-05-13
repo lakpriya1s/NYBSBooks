@@ -24,6 +24,20 @@
   color: white;
 }
 
+.navbar-dark {
+  background-color: #0f0c0c;
+}
+
+.footer {
+  background-color: #0f0c0c;
+  margin: 0px auto;
+  padding: 20px 0px 20px 0px;
+}
+
+.footcont.container {
+  color: aliceblue;
+}
+
 .App-link {
   color: #61dafb;
 }

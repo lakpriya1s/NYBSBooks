@@ -1,6 +1,6 @@
 import React from "react";
 
-const AboutUs = () => {
+const AboutUs = (path: any) => {
   return (
     <div>
       <h2>NYBS BOOKS</h2>

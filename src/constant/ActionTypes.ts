@@ -1,0 +1,15 @@
+export const ADD_BOOK_LIST = "ADD_BOOK_LIST";
+export const BOOK_LIST_LOADING = "BOOK_LIST_LOADING";
+export const BOOK_LIST_FAILED = "BOOK_LIST_FAILED";
+
+export const ADD_REVIEWS = "ADD_REVIEWS";
+export const REVIEWS_LOADING = "REVIEWS_LOADING";
+export const REVIEWS_FAILED = "REVIEWS_FAILED";
+
+export const ADD_TOP_BOOKS = "ADD_TOP_BOOKS";
+export const TOP_BOOKS_LOADING = "TOP_BOOKS_LOADING";
+export const TOP_BOOKS_FAILED = "TOP_BOOKS_FAILED";
+
+export const ADD_BOOKS = "ADD_BOOKS";
+export const BOOKS_LOADING = "BOOKS_LOADING";
+export const BOOKS_FAILED = "BOOKS_FAILED";
