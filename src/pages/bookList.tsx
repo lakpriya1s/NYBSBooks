@@ -17,11 +17,11 @@ const BookList = ({ booklists }: { booklists: any }) => {
   } else {
     const child = booklists.booklists.map((booklist: any) => {
       return (
-        <div key={booklist.list_name_encoded}>
-          <Link to={booklist.list_name_encoded}>
+        <div key={booklist.name}>
+          <Link to={booklist.name}>
             <div className="card text-center">
               <div className="card-body">
-                <h3>{booklist.display_name}</h3>
+                <h3>{booklist.name}</h3>
               </div>
             </div>
           </Link>

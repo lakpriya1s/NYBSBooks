@@ -11,6 +11,7 @@ const Books = ({ name }: { name: any }) => {
   }, [dispatch, name]);
 
   const books = useSelector((state: any) => state.books);
+  console.log(books);
 
   if (books.isLoading) {
     return (
@@ -25,22 +26,20 @@ const Books = ({ name }: { name: any }) => {
       </div>
     );
   } else {
-    const child = books.books.books.map((book: any) => {
+    const child = books.books.map((book: any) => {
       return (
         <div className="col-sm-6 col-lg-4">
           <div className="card card-product">
             <div className="img-wrap">
-              <img
-                src={book.book_image}
-                className="card-img-top"
-                alt={book.title}
-              />
+              <img src={book.image} className="card-img-top" alt={book.title} />
               <div className="info-wrap d-flex justify-content-center">
                 <div className="mr-3 ml-3">
                   <h6 className="title">
                     <strong>Title:</strong> {book.title} <br />
                     <br />
-                    <strong>Author:</strong> {book.author} <br />
+                    <strong>Author:</strong>{" "}
+                    {book.author.firestname + " " + book.author.lastnamae}{" "}
+                    <br />
                     <strong>Publisher:</strong> {book.publisher} <br />
                   </h6>
                   <p>{book.description}</p>
@@ -77,7 +76,7 @@ const Books = ({ name }: { name: any }) => {
         <div className="list_name">
           <div className="card">
             <div className="card-body">
-              <h3>{books.books.list_name}</h3>
+              <h3>{name}</h3>
             </div>
           </div>
         </div>

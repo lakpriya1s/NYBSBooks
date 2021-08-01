@@ -5,7 +5,7 @@ import * as URLs from "../constant/urls";
 export const fetchBookLists = () => (dispatch: any) => {
   dispatch(bookListLoading());
 
-  return fetch(URLs.booklistUrl + ApiKey)
+  return fetch(URLs.baseUrl + "categories")
     .then(
       (response) => {
         if (response.ok) {
@@ -23,7 +23,7 @@ export const fetchBookLists = () => (dispatch: any) => {
       }
     )
     .then((response) => response.json())
-    .then((booklist) => dispatch(addBookList(booklist.results)))
+    .then((booklist) => dispatch(addBookList(booklist)))
     .catch((error) => dispatch(bookListFailed(error.message)));
 };
 
@@ -44,7 +44,7 @@ export const bookListFailed = (error: any) => ({
 export const fetchBooks = (name: any) => (dispatch: any) => {
   dispatch(booksLoading());
 
-  return fetch(URLs.booksUrl + name + ".json?" + ApiKey)
+  return fetch(URLs.baseUrl + "books?category=" + name)
     .then(
       (response) => {
         if (response.ok) {
@@ -62,7 +62,7 @@ export const fetchBooks = (name: any) => (dispatch: any) => {
       }
     )
     .then((response) => response.json())
-    .then((books) => dispatch(addBooks(books.results)))
+    .then((books) => dispatch(addBooks(books)))
     .catch((error) => dispatch(booksFailed(error.message)));
 };
 
@@ -157,3 +157,86 @@ export const reviewsFailed = (error: any) => ({
   type: ActionTypes.REVIEWS_FAILED,
   paylaod: error,
 });
+
+export const requestLogin = (creds: any) => {
+  return {
+    type: ActionTypes.LOGIN_REQUEST,
+    creds,
+  };
+};
+
+export const receiveLogin = (response: any) => {
+  return {
+    type: ActionTypes.LOGIN_SUCCESS,
+    token: response.token,
+  };
+};
+
+export const loginError = (message: any) => {
+  return {
+    type: ActionTypes.LOGIN_FAILURE,
+    message,
+  };
+};
+
+export const loginUser = (creds: any) => (dispatch: any) => {
+  // We dispatch requestLogin to kickoff the call to the API
+  dispatch(requestLogin(creds));
+
+  return fetch(URLs.baseUrl + "users/login", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(creds),
+  })
+    .then(
+      (response) => {
+        if (response.ok) {
+          return response;
+        } else {
+          var error = new Error(
+            "Error " + response.status + ": " + response.statusText
+          );
+          throw error;
+        }
+      },
+      (error) => {
+        throw error;
+      }
+    )
+    .then((response) => response.json())
+    .then((response) => {
+      if (response.success) {
+        // If login was successful, set the token in local storage
+        localStorage.setItem("token", response.token);
+        localStorage.setItem("creds", JSON.stringify(creds));
+        // Dispatch the success action
+        dispatch(receiveLogin(response));
+      } else {
+        var error = new Error("Error " + response.status);
+        throw error;
+      }
+    })
+    .catch((error) => dispatch(loginError(error.message)));
+};
+
+export const requestLogout = () => {
+  return {
+    type: ActionTypes.LOGOUT_REQUEST,
+  };
+};
+
+export const receiveLogout = () => {
+  return {
+    type: ActionTypes.LOGOUT_SUCCESS,
+  };
+};
+
+// Logs the user out
+export const logoutUser = () => (dispatch: any) => {
+  dispatch(requestLogout());
+  localStorage.removeItem("token");
+  localStorage.removeItem("creds");
+  dispatch(receiveLogout());
+};

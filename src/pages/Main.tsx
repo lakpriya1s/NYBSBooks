@@ -8,7 +8,12 @@ import Books from "./books";
 import BookReviews from "./reviews";
 import { Redirect, Route, Switch, withRouter } from "react-router-dom";
 import { connect } from "react-redux";
-import { fetchBookLists, fetchTopBooks } from "../redux/ActionCreators";
+import {
+  fetchBookLists,
+  fetchTopBooks,
+  loginUser,
+  logoutUser,
+} from "../redux/ActionCreators";
 import Header from "../components/header";
 import Footer from "../components/footer";
 
@@ -17,11 +22,17 @@ const Main = ({
   topbooks,
   fetchBookLists,
   fetchTopBooks,
+  loginUser,
+  logoutUser,
+  auth,
 }: {
   booklists: any;
   topbooks: any;
+  auth: any;
   fetchBookLists: Function;
   fetchTopBooks: Function;
+  loginUser: Function;
+  logoutUser: Function;
 }) => {
   useEffect(() => {
     fetchBookLists();
@@ -42,7 +53,7 @@ const Main = ({
 
   return (
     <>
-      <Header />
+      <Header auth={auth} loginUser={loginUser} logoutUser={logoutUser} />
       <main style={{ paddingTop: "60px" }} className="container">
         <Switch>
           <Route
@@ -74,12 +85,19 @@ const mapDispatchToProps = (dispatch: any) => ({
   fetchTopBooks: () => {
     dispatch(fetchTopBooks());
   },
+  loginUser: (creds: any) => {
+    dispatch(loginUser(creds));
+  },
+  logoutUser: () => {
+    dispatch(logoutUser());
+  },
 });
 
 const mapStatetoProps = (state: any) => {
   return {
     booklists: state.booklists,
     topbooks: state.topbooks,
+    auth: state.auth,
   };
 };
 
